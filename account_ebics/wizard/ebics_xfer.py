@@ -22,7 +22,7 @@ try:
     fintech.cryptolib = 'cryptography'
 except ImportError:
     EbicsBank = object
-    logging.error('Failed to import fintech')
+    logging.debug('Failed to import fintech')
 
 from openerp import api, fields, models, _
 from openerp.exceptions import Warning as UserError

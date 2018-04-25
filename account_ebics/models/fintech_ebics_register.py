@@ -30,7 +30,7 @@ except RuntimeError, e:
     if e.message == "'register' can be called only once":
         pass
     else:
-        _logger.error(e.message)
+        _logger.debug(e.message)
         fintech.register()
 except:
     msg = "fintech.register error"
